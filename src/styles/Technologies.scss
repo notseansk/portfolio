@@ -1,0 +1,44 @@
+@use "colors" as c;
+@use "fonts" as f;
+
+.technologies {
+  margin-top: 8rem;
+  padding: 3.6rem 0;
+  background-color: c.$primary-dark;
+  > .container {
+    width: min(100%, 1240px);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    > .technologies-heading {
+      font-size: f.$heading-large;
+      letter-spacing: 1px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      color: c.$secondary-lightest;
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.7));
+    }
+    > .technologies-icons {
+      margin-top: 50px;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+
+      img {
+        width: 5rem;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      p {
+        text-align: center;
+        color: c.$secondary-lightest;
+        font-size: f.$paragraph-small;
+      }
+    }
+  }
+}

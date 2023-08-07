@@ -1,0 +1,31 @@
+@use "colors" as c;
+@use "_fonts" as f;
+
+#aboutme {
+  padding-top: 5rem;
+}
+.about {
+  width: 100%;
+  // height: 100vh;
+
+  padding: 3rem 0 6rem 0;
+
+  position: relative;
+  background-color: c.$primary-darkest;
+  clip-path: polygon(7% 0, 96% 8%, 92% 100%, 6% 92%);
+  > .container {
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    .text-content {
+      color: c.$secondary-light;
+
+      > h1 {
+        font-size: f.$heading-hero;
+      }
+      > p {
+        font-size: f.$paragraph-large;
+      }
+    }
+  }
+}

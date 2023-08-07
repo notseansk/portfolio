@@ -1,0 +1,42 @@
+@use "colors" as c;
+@use "fonts" as f;
+
+.footer {
+  height: auto;
+  width: 100vw;
+  margin-top: 4rem;
+  padding: 1.6rem 0;
+  background-color: c.$primary-darkest;
+  color: c.$secondary-light;
+
+  .container {
+    // width: min(1240px, 100%);
+    // margin-inline: auto;
+    padding-inline: 20px;
+  }
+  .footer-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-left > a {
+    display: flex;
+    align-items: center;
+    img {
+      width: 3.1rem;
+    }
+  }
+  .footer-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      // text-align: center;
+    }
+  }
+  .footer-right {
+    // text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

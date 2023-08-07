@@ -1,0 +1,121 @@
+@use "./fonts" as f;
+@use "./colors" as c;
+$nav-height: 3.8rem;
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  height: $nav-height;
+  background-color: c.$primary-light;
+  padding: 2.2rem 0;
+  > .container {
+    width: min(100%, 1240px);
+    padding: 0 20px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -36px;
+      transform: scaleX(1.06);
+      border-bottom: 2px solid #00474db6;
+      border-radius: 60%;
+    }
+    > .logo-div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      > a {
+        display: flex;
+        align-items: center;
+        > img {
+          width: 3.1rem;
+        }
+      }
+    }
+    > main {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+      color: c.$secondary-dark;
+      > div > #socials {
+        position: relative;
+      }
+      > .nav-links {
+        font-size: f.$paragraph-small;
+        font-weight: 500;
+        padding: 0.3rem 2rem;
+        color: c.$primary-darkest;
+        letter-spacing: 0.2px;
+        position: relative;
+        > a {
+          color: c.$primary-darkest;
+        }
+      }
+      > .nav-underline {
+        position: relative;
+        &::after {
+          content: "";
+          left: 50%;
+          bottom: -6px;
+          height: 4px;
+          border-radius: 100vh;
+          width: 0;
+          background-color: c.$primary-darkest;
+          position: absolute;
+          transition: all 0.1s ease-in;
+        }
+        &:hover::after {
+          width: 100%;
+          left: 0;
+          transform: scaleX(0.8);
+        }
+        &:active::after {
+          scale: 0;
+        }
+      }
+      > .active-tab {
+        border-radius: 10px;
+        border: none;
+        // padding: 0.3rem 0.8rem;
+        background-color: c.$primary-dark;
+        // background-color: red;
+        color: white;
+        > a {
+          color: white;
+        }
+      }
+
+      > .nav-email {
+        border: none;
+        border-radius: 10px;
+        background-color: c.$background;
+        padding: 0.3em 2.2em;
+        color: c.$primary-dark;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+          border-radius 0.7s ease-in-out, transform 0.2s ease-in-out;
+        &:hover {
+          background-color: c.$primary-dark;
+          color: c.$background;
+          border-radius: 10px 2px 10px 2px;
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 503.6px) {
+  .nav-links:first-child {
+    transform: rotate(45deg);
+  }
+}

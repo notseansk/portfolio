@@ -1,0 +1,100 @@
+@use "Navbar" as n;
+@use "colors" as c;
+@use "_fonts" as f;
+.home {
+  // height: calc(100vh - #{n.$nav-height});
+  height: 100vh;
+  // margin-top: #{n.$nav-height};
+  padding-top: #{n.$nav-height};
+  // color: rgb(216, 252, 255);
+  color: c.$secondary-light;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  > .container {
+    // max-width: 1240px;
+    width: min(100%, 1240px);
+
+    padding-inline: 20px;
+    margin-inline: auto;
+
+    > .hero {
+      // max-width: 1240px;
+      display: grid;
+      // gap: 8rem;
+      grid-template-columns: repeat(3, 1fr);
+      > .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: span 2;
+        margin-right: 200px;
+        text-shadow: 2px 2px 23px c.$primary-darkest;
+
+        > h1 {
+          font-size: f.$heading-hero;
+        }
+        > p {
+          font-size: f.$paragraph-hero;
+          > .typewriter-text {
+            letter-spacing: 2px;
+          }
+        }
+      }
+      .hero-img {
+        display: flex;
+        justify-content: center;
+        > img {
+          border: none;
+          border-radius: 53% 47% 31% 69% / 68% 68% 32% 32%;
+          max-width: 260px;
+          max-height: 260px;
+          box-shadow: 5px 5px 22px -8px black;
+        }
+      }
+      > .arrow-div {
+        height: 38px;
+        width: 38px;
+        border-radius: 5px;
+        position: absolute;
+        left: 50%;
+        top: 88%;
+        opacity: 0.9;
+        transform: translateX(-50%);
+        border-bottom: 6px solid c.$secondary-dark;
+        border-right: 6px solid c.$secondary-dark;
+        rotate: 45deg;
+        animation: upDown 1s infinite ease-in alternate;
+      }
+    }
+  }
+}
+
+// -----------parallax------------
+//------------from w3schools example------
+.parallax {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+
+  /* The image used */
+  background-image: url("../assets/background.svg");
+  opacity: 0.9;
+  // filter: blur(5px);
+  /* Set a specific height */
+  height: calc(100vh - #{n.$nav-height});
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes upDown {
+  to {
+    transform: translate(5px, 20px);
+  }
+}
