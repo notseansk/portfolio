@@ -1,29 +1,46 @@
 import React from "react";
 import "../styles/Projects.scss";
-// react-responsive-carousel couldn't customise
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import Carousel from "react-elastic-carousel";
+// import Carousel from "react-elastic-carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import image1 from "../assets/image1.jpeg";
-// import image2 from "../assets/image2.jpeg";
-// import image3 from "../assets/image3.jpeg";
 
 const Projects = () => {
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 640, itemsToShow: 2 },
-    { width: 1000, itemsToShow: 3 },
-  ];
+  // const breakPoints = [
+  //   { width: 1, itemsToShow: 1 },
+  //   { width: 640, itemsToShow: 2 },
+  //   { width: 1000, itemsToShow: 3 },
+  // ];
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
     <div className="projects" id="projectsection">
       <div className="container">
         <div className="carousel">
           <Carousel
+            responsive={responsive}
             // enableAutoPlay={true}
             // autoPlaySpeed={3000}
-            breakPoints={breakPoints}
-            disableArrowsOnEnd={false}
+            // breakPoints={breakPoints}
+            // disableArrowsOnEnd={false}
           >
             {/* --------first box------------ */}
 
