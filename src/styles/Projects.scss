@@ -12,29 +12,55 @@
     width: min(100%, 1240px);
     margin-inline: auto;
     margin-top: 8rem;
-    img {
-      width: 200px;
+
+    > .carousel {
+      width: 100%;
+      .each-image-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: c.$primary-darkest;
+        border-radius: 36px;
+        width: 320px;
+        margin-inline: 20px;
+        padding: 50px 20px;
+        gap: 2rem;
+        color: white;
+        img {
+          border-radius: 36px;
+          width: 200px;
+        }
+      }
     }
   }
 
-  //   .each-image-div {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     background-color: #02778296;
-  //     border: none;
-  //     border-radius: 2vw;
-  //     box-shadow: 0 0 26px -8px c.$primary-darkest;
-  //     width: 300px;
-  //     height: 360px;
-  //     padding: 2.6rem 1rem;
-  //     margin: 1rem 0;
-  //     transition: all 0.2s ease-in-out;
-  //     &:hover {
-  //       transform: scale(1.06);
-  //       // box-shadow: 3px 3px 9px 1px c.$primary-darkest;
-  //     }
+  // ----------react-multi-carousel-edits-----------
+  .react-multi-carousel-item {
+    display: flex;
+    justify-content: center;
+  }
+  // .react-multiple-carousel__arrow--left {
+  //   left: 0;
+  // }
+  // .each-image-div {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   background-color: #02778296;
+  //   border: none;
+  //   border-radius: 2vw;
+  //   // box-shadow: 0 0 26px -8px c.$primary-darkest;
+  //   width: 300px;
+  //   height: 360px;
+  //   padding: 2.6rem 1rem;
+  //   margin: 1rem 0;
+  //   transition: all 0.2s ease-in-out;
+  //   &:hover {
+  //     transform: scale(1.06);
+  //     // box-shadow: 3px 3px 9px 1px c.$primary-darkest;
   //   }
+  // }
   //   .carousel-image {
   //     border-radius: 2vw;
   //     overflow: hidden;
