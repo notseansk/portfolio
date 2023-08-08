@@ -4,6 +4,7 @@
   scroll-padding-top: 5rem;
   overflow-x: hidden;
 }
+
 *,
 *::before,
 *::after {
@@ -12,9 +13,17 @@
   padding: 0;
   text-decoration: none;
 }
+a:hover {
+  cursor: url("../assets/cursor-hand-main2.png"), auto;
+}
+input,
+textarea:hover {
+  cursor: url("../assets/cursor-text-main.png"), auto;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #83c5be;
+  cursor: url("../assets/cursor-main2.png"), auto;
 }
 @media screen and (max-width: 1400px) {
   body {
