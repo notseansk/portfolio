@@ -16,3 +16,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #83c5be;
 }
+@media screen and (max-width: 1400px) {
+  body {
+    display: none;
+  }
+}
