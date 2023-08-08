@@ -10,7 +10,6 @@ const Home = () => {
   const handleScroll = () => {
     const position = window.scrollY;
     setYPosition(position);
-    console.log(position);
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
