@@ -32,8 +32,11 @@
         height: 5rem;
         transition: all 0.2s ease-in-out;
         object-fit: contain;
+<<<<<<< HEAD
         filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
 
+=======
+>>>>>>> 5b7a8aff7629dcd89f0faddf717fa771910421f7
         &:hover {
           transform: scale(1.2);
         }
