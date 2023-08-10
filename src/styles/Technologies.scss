@@ -19,7 +19,7 @@
       color: c.$secondary-lightest;
       filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.7));
     }
-    > .technologies-icons {
+    > .technologies-container {
       margin-top: 50px;
 
       display: flex;
@@ -29,7 +29,11 @@
 
       img {
         width: 5rem;
+        height: 5rem;
         transition: all 0.2s ease-in-out;
+        object-fit: contain;
+        filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
+
         &:hover {
           transform: scale(1.2);
         }
@@ -38,6 +42,7 @@
         text-align: center;
         color: c.$secondary-lightest;
         font-size: f.$paragraph-small;
+        text-shadow: 0 0 14px rgb(0, 0, 0);
       }
     }
   }

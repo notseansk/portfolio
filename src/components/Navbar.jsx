@@ -14,6 +14,7 @@ const Navbar = () => {
   }, []);
   const [activeTab, setActiveTab] = useState(null);
   const [clicked, setClicked] = useState(false);
+  const [menuIconClicked, setMenuIconClicked] = useState(false);
 
   const handleClick = (e) => {
     setClicked(!clicked);
@@ -34,7 +35,7 @@ const Navbar = () => {
             <img src={logoMain} alt="logo" />
           </a>
         </div>
-        <main>
+        <main className={menuIconClicked && "active-menu"}>
           <a
             onClick={handleClick}
             id="about"
@@ -78,6 +79,18 @@ const Navbar = () => {
             Email
           </a>
         </main>
+        <div
+          onClick={() => {
+            setMenuIconClicked(!menuIconClicked);
+          }}
+          className="menu-icon"
+        >
+          <i
+            className={
+              menuIconClicked ? "fa-solid fa-xmark" : "fa-solid fa-bars"
+            }
+          ></i>
+        </div>
       </div>
     </nav>
   );

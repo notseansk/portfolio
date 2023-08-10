@@ -25,8 +25,8 @@ body {
   background-color: #83c5be;
   cursor: url("../assets/cursor-main2.png"), auto;
 }
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   body {
     display: none;
   }
-}
+} */

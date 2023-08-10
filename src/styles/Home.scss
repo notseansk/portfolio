@@ -22,14 +22,19 @@
 
     > .hero {
       // max-width: 1240px;
-      display: grid;
+      // display: grid;
+      display: flex;
+
       // gap: 8rem;
-      grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+
       > .hero-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        grid-column: span 2;
+
+        // grid-column: span 2;
         margin-right: 200px;
         text-shadow: 2px 2px 23px c.$primary-darkest;
 

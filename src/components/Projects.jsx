@@ -1,5 +1,10 @@
 import React from "react";
 import "../styles/Projects.scss";
+import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project2.jpg";
+import project3 from "../assets/project3.jpg";
+import project4 from "../assets/project4.jpg";
+import project5 from "../assets/project5.jpg";
 
 // import Carousel from "react-elastic-carousel";
 import Carousel from "react-multi-carousel";
@@ -46,12 +51,12 @@ const Projects = () => {
 
             <div className="each-image-div ">
               <a
-                href="https://www.google.com"
+                href="https://react-router-implementation.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="carousel-image carousel-image-1 "
               >
-                <img src={image1} alt="" />
+                <img src={project1} alt="" />
               </a>
               <div className="carousel-text carousel-text-1">
                 <p className="legend">This is image one.</p>
@@ -61,12 +66,12 @@ const Projects = () => {
 
             <div className="each-image-div ">
               <a
-                href="https://www.google.com"
+                href="https://react-tailwind-roan-eight.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="carousel-image carousel-image-2 "
               >
-                <img src={image1} alt="" />
+                <img src={project2} alt="" />
               </a>
               <div className="carousel-text carousel-text-2">
                 <p className="legend">This is image two.</p>
@@ -75,12 +80,12 @@ const Projects = () => {
             {/* --------third box------------ */}
             <div className="each-image-div ">
               <a
-                href="https://www.google.com"
+                href="https://tic-tac-toe-six-blond.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="carousel-image carousel-image-3 "
               >
-                <img src={image1} alt="" />
+                <img src={project3} alt="" />
               </a>
               <div className="carousel-text carousel-text-3">
                 <p className="legend">This is image three.</p>
@@ -90,12 +95,12 @@ const Projects = () => {
 
             <div className="each-image-div ">
               <a
-                href="https://www.google.com"
+                href="https://rock-paper-scissor-five-ecru.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="carousel-image carousel-image-3 "
               >
-                <img src={image1} alt="" />
+                <img src={project4} alt="" />
               </a>
               <div className="carousel-text carousel-text-3">
                 <p className="legend">This is image four.</p>
@@ -105,7 +110,37 @@ const Projects = () => {
 
             <div className="each-image-div ">
               <a
-                href="https://www.google.com"
+                href="https://bmi-calc-taupe.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="carousel-image carousel-image-3 "
+              >
+                <img src={project5} alt="" />
+              </a>
+              <div className="carousel-text carousel-text-3">
+                <p className="legend">This is image five.</p>
+              </div>
+            </div>
+            {/* --------sixth box------------ */}
+
+            <div className="each-image-div ">
+              <a
+                href="http://www.google.com"
+                target="_blank"
+                rel="noreferrer"
+                className="carousel-image carousel-image-3 "
+              >
+                <img src={image1} alt="" />
+              </a>
+              <div className="carousel-text carousel-text-3">
+                <p className="legend">This is image five.</p>
+              </div>
+            </div>
+            {/* --------seventh box------------ */}
+
+            <div className="each-image-div ">
+              <a
+                href="http://www.google.com"
                 target="_blank"
                 rel="noreferrer"
                 className="carousel-image carousel-image-3 "

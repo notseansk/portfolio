@@ -1,0 +1,294 @@
+@use "colors" as c;
+@use "fonts" as f;
+@media screen and (max-width: 1570px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  // ---------about---------
+  .about {
+    clip-path: none;
+  }
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 1280px) {
+  // ---------global---------
+  .container {
+    // background-color: red;
+    // padding-inline: 3rem !important;
+  }
+
+  // ---------navbar---------
+  // ---------home---------
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+
+  .home {
+    .container {
+      padding: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  // ---------global---------
+  // ---------navbar---------
+  // ---------home---------
+  .home {
+    h1 {
+      font-size: 3.6rem !important;
+    }
+  }
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 1024px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 904px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  .home {
+    h1 {
+      font-size: 3.4rem !important;
+    }
+  }
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 880px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  .home {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 844px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  .home {
+    h1 {
+      font-size: 2.4rem !important;
+    }
+  }
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 844px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  .home {
+    h1 {
+      font-size: 3rem !important;
+    }
+    .container {
+      .hero {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: -120px;
+        .hero-text {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 767px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  .nav {
+    .container {
+      main {
+        gap: 8px;
+      }
+    }
+  }
+  // ---------home---------
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 750px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // .nav {
+  //   .container {
+  //     main {
+  //       gap: 0;
+  //     }
+  //   }
+  // }
+  // ---------home---------
+  // ---------about---------
+  // ---------technologies---------
+  .technologies {
+    .container {
+      padding-inline: 3rem;
+    }
+    .technologies-heading {
+      text-align: center;
+    }
+  }
+  // ---------projects---------
+  // ---------contact---------
+  .contact {
+    .container {
+      display: flex;
+    }
+    .form {
+      width: 100%;
+      // margin-inline: auto !important;
+    }
+    aside {
+      display: none !important;
+    }
+  }
+  // ---------footer---------
+}
+@media screen and (max-width: 710px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  // ---------about---------
+  // ---------technologies---------
+  .technologies {
+    .container {
+      .technologies-heading {
+        font-size: 1.8rem !important;
+      }
+    }
+  }
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 680px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  .nav {
+    .container {
+      main {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: -300px;
+        top: 34px;
+        height: 100vh;
+        padding: 2rem;
+        gap: 1.2rem;
+
+        background-color: c.$primary-darkest;
+        transition: all 0.2s ease-out;
+        .nav-links {
+          all: unset;
+          border: none;
+          border-radius: 10px;
+          width: 100%;
+          // background-color: c.$background;
+          padding: 8px 34px;
+          color: c.$primary-dark;
+          text-align: center;
+          font-size: 1.2rem;
+          cursor: url("../assets/cursor-hand-main2.png"), auto;
+        }
+        a,
+        div a,
+        div {
+          color: white !important;
+          background-color: transparent !important;
+        }
+      }
+      .menu-icon {
+        display: block;
+        cursor: url("../assets/cursor-hand-main2.png"), auto;
+        // background-color: red;
+      }
+    }
+  }
+  .active-menu {
+    right: 0 !important;
+  }
+  // ---------home---------
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 512px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  .home {
+    h1 {
+      font-size: 2.4rem !important;
+    }
+  }
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}
+@media screen and (max-width: 480px) {
+  // ---------global---------
+
+  // ---------navbar---------
+  // ---------home---------
+  // ---------about---------
+  // ---------technologies---------
+  // ---------projects---------
+  // ---------contact---------
+  // ---------footer---------
+}

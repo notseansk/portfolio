@@ -24,12 +24,19 @@
         border-radius: 36px;
         width: 320px;
         margin-inline: 20px;
-        padding: 50px 20px;
+        padding: 40px 0;
         gap: 2rem;
         color: white;
+        a {
+          display: flex;
+          justify-content: center;
+          width: 290px;
+          height: 280px;
+        }
         img {
-          border-radius: 36px;
-          width: 200px;
+          border-radius: 20px;
+          width: 80%;
+          object-fit: cover;
         }
       }
     }
