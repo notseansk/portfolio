@@ -27,6 +27,12 @@ $nav-height: 3.8rem;
       border-bottom: 2px solid #00474db6;
       border-radius: 60%;
     }
+    .menu-icon {
+      display: none;
+      color: c.$primary-darkest;
+      font-size: 2rem;
+      padding: 20px;
+    }
     > .logo-div {
       display: flex;
       justify-content: flex-start;
@@ -114,8 +120,8 @@ $nav-height: 3.8rem;
   }
 }
 
-@media screen and (max-width: 503.6px) {
-  .nav-links:first-child {
-    transform: rotate(45deg);
-  }
-}
+// @media screen and (max-width: 503.6px) {
+//   .nav-links:first-child {
+//     transform: rotate(45deg);
+//   }
+// }

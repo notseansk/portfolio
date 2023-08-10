@@ -56,6 +56,7 @@ const Home = () => {
             </p>
           </div>
           <Tilt
+            className="hero-img-tilt"
             // tiltMaxAngleY={30}
             // tiltMaxAngleX={30}
             scale="1.1"

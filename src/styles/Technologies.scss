@@ -29,7 +29,9 @@
 
       img {
         width: 5rem;
+        height: 5rem;
         transition: all 0.2s ease-in-out;
+        object-fit: contain;
         &:hover {
           transform: scale(1.2);
         }
