@@ -1,13 +1,13 @@
 @use "colors" as c;
 @use "fonts" as f;
-@media screen and (max-width: 1570px) {
+@media screen and (max-width: 1400px) {
   // ---------global---------
 
   // ---------navbar---------
   // ---------home---------
   // ---------about---------
   .about {
-    clip-path: none;
+    clip-path: none !important;
   }
   // ---------technologies---------
   // ---------projects---------
@@ -24,6 +24,7 @@
   // ---------navbar---------
   // ---------home---------
   // ---------about---------
+
   // ---------technologies---------
   // ---------projects---------
   // ---------contact---------
@@ -218,13 +219,14 @@
   .nav {
     .container {
       main {
+        border-left: 2px solid c.$primary-light;
         position: absolute;
         display: flex;
         flex-direction: column;
         right: -300px;
         top: 34px;
         height: 100vh;
-        padding: 2rem;
+        padding: 1.2rem;
         gap: 1.2rem;
 
         background-color: c.$primary-darkest;
@@ -233,19 +235,27 @@
           all: unset;
           border: none;
           border-radius: 10px;
-          width: 100%;
+          // width: 100%;
+          width: 110px;
+          padding-inline: 3rem !important;
           // background-color: c.$background;
           padding: 8px 34px;
-          color: c.$primary-dark;
+          color: white;
           text-align: center;
           font-size: 1.2rem;
           cursor: url("../assets/cursor-hand-main2.png"), auto;
-        }
-        a,
-        div a,
-        div {
-          color: white !important;
-          background-color: transparent !important;
+          transition: all 0.2s ease-in-out;
+          a {
+            color: white;
+          }
+          &:hover {
+            border-radius: 10px;
+            background-color: c.$primary-light;
+            color: c.$primary-darkest;
+            > a {
+              color: c.$primary-darkest;
+            }
+          }
         }
       }
       .menu-icon {
@@ -257,6 +267,23 @@
   }
   .active-menu {
     right: 0 !important;
+  }
+  // ---------socialsdropdown---------------------------------------------------
+  .socials-dropdown {
+    left: -200px;
+    top: 160px;
+    background-color: c.$primary-darkest !important;
+    border-radius: 0;
+    border: 2px solid c.$primary-light;
+    ul {
+      li {
+        i {
+          color: c.$primary-light !important;
+        }
+        display: flex;
+        justify-content: center !important;
+      }
+    }
   }
   // ---------home---------
   // ---------about---------

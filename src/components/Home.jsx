@@ -87,9 +87,7 @@ const Home = () => {
             //     yPosition * 0.4
             //   }px)`,
             // }}
-          >
-            .
-          </a>
+          ></a>
         </div>
       </div>
     </div>

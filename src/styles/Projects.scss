@@ -32,11 +32,16 @@
           justify-content: center;
           width: 290px;
           height: 280px;
+          img {
+            border-radius: 20px;
+            width: 80%;
+            object-fit: cover;
+          }
         }
-        img {
-          border-radius: 20px;
-          width: 80%;
-          object-fit: cover;
+
+        .legend {
+          text-align: center;
+          padding-inline: 44px;
         }
       }
     }
@@ -46,6 +51,9 @@
   .react-multi-carousel-item {
     display: flex;
     justify-content: center;
+  }
+  .react-multiple-carousel__arrow {
+    z-index: 8;
   }
   // .react-multiple-carousel__arrow--left {
   //   left: 0;

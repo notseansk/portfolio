@@ -25,6 +25,9 @@
       }
       > p {
         font-size: f.$paragraph-large;
+        .tab {
+          margin-left: 120px;
+        }
       }
     }
   }

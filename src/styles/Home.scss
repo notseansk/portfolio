@@ -3,7 +3,7 @@
 @use "_fonts" as f;
 .home {
   // height: calc(100vh - #{n.$nav-height});
-  height: 100vh;
+  height: 100dvh;
   // margin-top: #{n.$nav-height};
   padding-top: #{n.$nav-height};
   // color: rgb(216, 252, 255);

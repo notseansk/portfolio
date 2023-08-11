@@ -67,7 +67,12 @@ const Navbar = () => {
                 : "nav-links nav-underline "
             }
           >
-            <a onClick={handleClick} id="socials" href="#socialssection">
+            <a
+              className="nav-socials"
+              onClick={handleClick}
+              id="socials"
+              href="#socialssection"
+            >
               Socials
             </a>
             {activeTab === "socials" && clicked === true ? (

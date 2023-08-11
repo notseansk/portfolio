@@ -59,7 +59,9 @@ const Projects = () => {
                 <img src={project1} alt="" />
               </a>
               <div className="carousel-text carousel-text-1">
-                <p className="legend">This is image one.</p>
+                <p className="legend">
+                  1. React Webapp by implementing React Router.
+                </p>
               </div>
             </div>
             {/* --------second box------------ */}
@@ -74,7 +76,9 @@ const Projects = () => {
                 <img src={project2} alt="" />
               </a>
               <div className="carousel-text carousel-text-2">
-                <p className="legend">This is image two.</p>
+                <p className="legend">
+                  2. React static webiste with Tailwind CSS.
+                </p>
               </div>
             </div>
             {/* --------third box------------ */}
@@ -88,7 +92,7 @@ const Projects = () => {
                 <img src={project3} alt="" />
               </a>
               <div className="carousel-text carousel-text-3">
-                <p className="legend">This is image three.</p>
+                <p className="legend">3. Tic-Tac-Toe using React.</p>
               </div>
             </div>
             {/* --------fourth box------------ */}
@@ -103,7 +107,7 @@ const Projects = () => {
                 <img src={project4} alt="" />
               </a>
               <div className="carousel-text carousel-text-3">
-                <p className="legend">This is image four.</p>
+                <p className="legend">4. Rock-Paper-Scissor using vanillaJS.</p>
               </div>
             </div>
             {/* --------fifth box------------ */}
@@ -118,12 +122,12 @@ const Projects = () => {
                 <img src={project5} alt="" />
               </a>
               <div className="carousel-text carousel-text-3">
-                <p className="legend">This is image five.</p>
+                <p className="legend">5. BMI calc using React.</p>
               </div>
             </div>
             {/* --------sixth box------------ */}
 
-            <div className="each-image-div ">
+            {/* <div className="each-image-div ">
               <a
                 href="http://www.google.com"
                 target="_blank"
@@ -135,10 +139,10 @@ const Projects = () => {
               <div className="carousel-text carousel-text-3">
                 <p className="legend">This is image five.</p>
               </div>
-            </div>
+            </div> */}
             {/* --------seventh box------------ */}
 
-            <div className="each-image-div ">
+            {/* <div className="each-image-div ">
               <a
                 href="http://www.google.com"
                 target="_blank"
@@ -150,7 +154,7 @@ const Projects = () => {
               <div className="carousel-text carousel-text-3">
                 <p className="legend">This is image five.</p>
               </div>
-            </div>
+            </div> */}
           </Carousel>
         </div>
       </div>

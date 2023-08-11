@@ -7,6 +7,7 @@ import sass from "../assets/sass.png";
 import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import firebase from "../assets/firebase.png";
+import illustrator from "../assets/illustrator.png";
 
 const Technologies = () => {
   return (
@@ -40,7 +41,11 @@ const Technologies = () => {
             <img src={sass} alt="/" />
             <p>SASS</p>
           </a>
-          <a href="https://react.dev/learn" target="_blank" rel="noreferrer">
+          <a
+            href="https://v2.tailwindcss.com/docs"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={tailwind} alt="/" />
             <p>Tailwind CSS</p>
           </a>
@@ -57,9 +62,21 @@ const Technologies = () => {
             <p>React JS</p>
           </a>
 
-          <a href="https://react.dev/learn" target="_blank" rel="noreferrer">
+          <a
+            href="https://firebase.google.com/docs?gad=1&gclsrc=ds&gclsrc=ds"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={firebase} alt="/" />
             <p>Firebase</p>
+          </a>
+          <a
+            href="https://helpx.adobe.com/illustrator/user-guide.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={illustrator} alt="/" />
+            <p>Illustrator</p>
           </a>
         </div>
       </div>

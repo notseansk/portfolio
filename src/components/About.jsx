@@ -9,20 +9,18 @@ const About = () => {
             <h1>hey</h1>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis laborum animi quo in aliquid rerum voluptatem tenetur,
-              fuga, ea ipsam explicabo non ut saepe nam consequatur eaque et
-              distinctio molestias voluptatibus dignissimos molestiae
-              repellendus atque expedita pariatur! Necessitatibus nisi libero,
-              est amet, aliquid quasi itaque quas quibusdam dolores maiores
-              neque praesentium quia alias atque expedita blanditiis, architecto
-              eos exercitationem voluptatem. Rerum, aliquam dolor facilis magni
-              praesentium ipsa corrupti voluptates quod! Eius veritatis
-              distinctio ut vero aut voluptatem, hic similique soluta
-              cupiditate, enim quibusdam nihil architecto adipisci vel veniam.
-              Facere nam, adipisci commodi repellat fugit, non magni nesciunt
-              fuga nemo culpa tenetur itaque. Libero, obcaecati quisquam.
-              Excepturi reprehenderit, cumque vel ar.
+              <span className="tab"></span>I am Shaun Pant. I am an
+              Enthusiastic, self-motivated, responsible and hard-working
+              individual with strong passion for web development. I consider
+              myself an inovative and avid front end developer. I like creating
+              websites and I mostly work on HTML, CSS and React JS. In my free
+              time I like to dabble into the world of graphics designing and
+              photography as well. I think that's all for my introduction, I am
+              not that interesting you see.. but please let me know what you
+              think about this website via the message section below. (I could
+              have built a navigate button here but sorry I am too lazy.) PS:
+              Rome was't built in a day but this website was. Haha.... I wish "
+              dying inside :'( ".
             </p>
           </div>
         </div>
