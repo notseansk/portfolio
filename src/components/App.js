@@ -11,18 +11,12 @@ import Technologies from "./Technologies";
 import { useEffect, useState } from "react";
 function App() {
   const [pageLoaded, setPageLoaded] = useState(false);
+  const handlePageLoad = () => {
+    setPageLoaded(true);
+  };
   useEffect(() => {
-    window.addEventListener(
-      "load",
-      () => {
-        setPageLoaded(true);
-      },
-      { passive: true }
-    );
-    return () => {
-      window.removeEventListener("load", () => {
-        setPageLoaded(true);
-      });
+    window.onload = () => {
+      handlePageLoad();
     };
   }, []);
   return (
