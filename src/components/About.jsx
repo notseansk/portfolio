@@ -17,10 +17,8 @@ const About = () => {
               time I like to dabble into the world of graphics designing and
               photography as well. I think that's all for my introduction, I am
               not that interesting you see.. but please let me know what you
-              think about this website via the message section below. (I could
-              have built a navigate button here but sorry I am too lazy.) PS:
-              Rome was't built in a day but this website was. Haha.... I wish "
-              dying inside :'( ".
+              think about this website via the message section below. PS: Rome
+              was't built in a day but this website was. Haha.... I wish.
             </p>
           </div>
         </div>
