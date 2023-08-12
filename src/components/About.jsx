@@ -15,11 +15,10 @@ const About = () => {
               myself an inovative and avid front end developer. I like creating
               websites and I mostly work on HTML, CSS and React JS. In my free
               time I like to dabble into the world of graphics designing and
-              photography as well. I think that's all for my introduction, I am
-              not that interesting you see.. but please let me know what you
-              think about this website via the <a href="#contact">contact me</a>{" "}
-              section below. PS: Rome was't built in a day but this website was,
-              I wish.
+              photography as well. I think that's all for my introduction,
+              please let me know what you think about this website via the{" "}
+              <a href="#contact">contact me</a> section below. PS: Rome was't
+              built in a day but this website was, I wish.
             </p>
           </div>
         </div>
