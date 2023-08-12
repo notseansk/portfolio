@@ -13,7 +13,7 @@ const Preloader = () => {
     window.onload = () => {
       setTimeout(() => {
         handlePageLoad();
-      }, 1000);
+      }, 500);
     };
   }, []);
   return (
@@ -24,7 +24,7 @@ const Preloader = () => {
       {/* <div style={pageLoaded ? { display: "none" } : null} id="preloader"></div> */}
       {/* --------new--------- */}
       <div
-        style={pageLoaded ? { opacity: "0" } : null}
+        style={true ? { opacity: "0", zIndex: "-1" } : null}
         className="preloader"
       ></div>
     </div>
