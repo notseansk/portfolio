@@ -47,7 +47,7 @@ const Preloader = () => {
       {/* --------new--------- */}
 
       <div
-        onLoad={setTimeout(() => loadNow(), 5000)}
+        onLoad={setTimeout(() => loadNow(), 1500)}
         style={pageLoaded === true ? { opacity: "0", zIndex: "-1" } : null}
         className="preloader"
       ></div>
