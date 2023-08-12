@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [pageLoaded, setPageLoaded] = useState(false);
   const handlePageLoad = () => {
-    setPageLoaded(true);
+    setPageLoaded(!pageLoaded);
   };
   useEffect(() => {
     // document.ready = () => {
@@ -23,7 +23,7 @@ function App() {
         handlePageLoad();
       }, 1000);
     };
-  }, [pageLoaded]);
+  }, []);
   return (
     <div className="App">
       {/* --------this doesnot work---------- */}
@@ -31,7 +31,7 @@ function App() {
       {/* --------but this works---------- */}
       {/* <div style={pageLoaded ? { display: "none" } : null} id="preloader"></div> */}
       {/* --------new--------- */}
-      {!pageLoaded && <div id="preloader"></div>}
+      {pageLoaded ? null : <div id="preloader"></div>}
       <Navbar />
       <Home />
       <About />
