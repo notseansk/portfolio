@@ -19,7 +19,9 @@ function App() {
     //   handlePageLoad();
     // };
     window.onload = () => {
-      handlePageLoad();
+      setTimeout(() => {
+        handlePageLoad();
+      }, 1000);
     };
   }, [pageLoaded]);
   return (
