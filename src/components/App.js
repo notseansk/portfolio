@@ -15,9 +15,9 @@ function App() {
     setPageLoaded(true);
   };
   useEffect(() => {
-    document.ready = () => {
-      handlePageLoad();
-    };
+    // document.ready = () => {
+    //   handlePageLoad();
+    // };
     window.onload = () => {
       handlePageLoad();
     };
@@ -27,7 +27,9 @@ function App() {
       {/* --------this doesnot work---------- */}
       {/* <div style={pageLoaded && { display: "none" }} id="preloader"></div> */}
       {/* --------but this works---------- */}
-      <div style={pageLoaded ? { display: "none" } : null} id="preloader"></div>
+      {/* <div style={pageLoaded ? { display: "none" } : null} id="preloader"></div> */}
+      {/* --------new--------- */}
+      {!pageLoaded && <div id="preloader"></div>}
       <Navbar />
       <Home />
       <About />
