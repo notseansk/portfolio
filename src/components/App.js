@@ -15,10 +15,13 @@ function App() {
     setPageLoaded(true);
   };
   useEffect(() => {
+    document.ready = () => {
+      handlePageLoad();
+    };
     window.onload = () => {
       handlePageLoad();
     };
-  }, []);
+  }, [pageLoaded]);
   return (
     <div className="App">
       {/* --------this doesnot work---------- */}
