@@ -30,3 +30,14 @@ body {
     display: none;
   }
 } */
+
+/* -------------preloader-------------- */
+#preloader {
+  background: #83c5be url("../assets/preloader2-large-fast.gif") no-repeat
+    center center;
+  background-size: 5%;
+  position: fixed;
+  width: 100%;
+  height: 100dvh;
+  z-index: 100;
+}

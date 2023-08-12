@@ -8,9 +8,25 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Technologies from "./Technologies";
+import { useEffect, useState } from "react";
 function App() {
+  const [pageLoaded, setPageLoaded] = useState(false);
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      setPageLoaded(true);
+    });
+    return () => {
+      window.removeEventListener("load", () => {
+        setPageLoaded(true);
+      });
+    };
+  });
   return (
     <div className="App">
+      {/* --------this doesnot work---------- */}
+      {/* <div style={pageLoaded && { display: "none" }} id="preloader"></div> */}
+      {/* --------but this works---------- */}
+      <div style={pageLoaded ? { display: "none" } : null} id="preloader"></div>
       <Navbar />
       <Home />
       <About />

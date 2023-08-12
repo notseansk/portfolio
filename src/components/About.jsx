@@ -16,7 +16,7 @@ const About = () => {
               websites and I mostly work on HTML, CSS and React JS. In my free
               time I like to dabble into the world of graphics designing and
               photography as well. I think that's all for my introduction,
-              please let me know what you think about this website via the{" "}
+              please let me know what you think about this website via the&nbsp;
               <a href="#contact">contact me</a> section below. PS: Rome was't
               built in a day but this website was, I wish.
             </p>
