@@ -30,6 +30,7 @@ const Home = () => {
             style={{ transform: `translateY(${yPosition * 1.2}px)` }}
           >
             <motion.h1
+              className="hero-text-heading"
               initial={{ x: "-100%", opacity: "0" }}
               whileInView={{ x: "0", opacity: "1" }}
             >

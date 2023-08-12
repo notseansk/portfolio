@@ -9,7 +9,7 @@ import project5 from "../assets/project5.jpg";
 // import Carousel from "react-elastic-carousel";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import image1 from "../assets/image1.jpeg";
+// import image1 from "../assets/image1.jpeg";
 
 const Projects = () => {
   // const breakPoints = [
