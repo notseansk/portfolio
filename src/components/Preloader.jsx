@@ -14,11 +14,16 @@ const Preloader = () => {
     // window.onload = () => {
     //   loadNow();
     // };
-    document.addEventListener("DOMContentLoaded", function () {
-      setInterval(() => {
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   setInterval(() => {
+    //     setPageLoaded(true);
+    //   }, 1000);
+    // });
+    document.onreadystatechange = function () {
+      if (document.readyState == "complete") {
         setPageLoaded(true);
-      }, 1000);
-    });
+      }
+    };
   }, []);
   // function loadNow() {
   //   setTimeout(() => {
