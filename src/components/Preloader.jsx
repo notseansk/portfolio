@@ -23,7 +23,10 @@ const Preloader = () => {
       {/* --------but this works---------- */}
       {/* <div style={pageLoaded ? { display: "none" } : null} id="preloader"></div> */}
       {/* --------new--------- */}
-      {pageLoaded ? null : <div className="preloader"></div>}
+      <div
+        style={pageLoaded ? { opacity: "0" } : null}
+        className="preloader"
+      ></div>
     </div>
   );
 };
