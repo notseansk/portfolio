@@ -3,24 +3,23 @@ import { useEffect, useState } from "react";
 
 const Preloader = () => {
   const [pageLoaded, setPageLoaded] = useState(false);
-  // const handlePageLoad = () => {
-  //   setPageLoaded(!pageLoaded);
-  // };
-  // useEffect(() => {
-  //   // document.readyState = () => {
-  //   //   handlePageLoad();
-  //   // };
-  //   window.onload = () => {
-  //     setInterval(() => {
-  //       handlePageLoad();
-  //       console.log("inside use effect");
-  //     }, 500);
-  //   };
-  // }, []);
+  const handlePageLoad = () => {
+    setPageLoaded(!pageLoaded);
+  };
+  useEffect(() => {
+    // document.readyState = () => {
+    //   handlePageLoad();
+    // };
+    window.onload = () => {
+      loadNow();
+    };
+  }, []);
+  const loadNow = () => {
+    setTimeout(() => {
+      setPageLoaded(true);
+    }, 500);
+  };
 
-  setTimeout(() => {
-    setPageLoaded(true);
-  }, 1300);
   return (
     <div>
       {/* --------this doesnot work---------- */}
