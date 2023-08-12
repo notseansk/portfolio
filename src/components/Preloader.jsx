@@ -11,26 +11,26 @@ const Preloader = () => {
     //   handlePageLoad();
     // };
 
-    // window.onload = () => {
-    //   loadNow();
-    // };
+    window.onload = () => {
+      loadNow();
+    };
     // document.addEventListener("DOMContentLoaded", function () {
     //   setInterval(() => {
     //     setPageLoaded(true);
     //   }, 1000);
     // });
-    document.onreadystatechange = function () {
-      if (document.readyState == "complete") {
-        setPageLoaded(true);
-      }
-    };
+    // document.onreadystatechange = function () {
+    //   if (document.readyState == "complete") {
+    //     setPageLoaded(true);
+    //   }
+    // };
   }, []);
-  // function loadNow() {
-  //   setTimeout(() => {
-  //     setPageLoaded(!pageLoaded);
-  //     console.log("inside loadnow");
-  //   }, 500);
-  // }
+  function loadNow() {
+    setTimeout(() => {
+      setPageLoaded(true);
+      console.log("inside loadnow");
+    }, 500);
+  }
 
   return (
     <div>
@@ -47,6 +47,7 @@ const Preloader = () => {
       {/* --------new--------- */}
 
       <div
+        onLoad={setTimeout(() => loadNow(), 5000)}
         style={pageLoaded === true ? { opacity: "0", zIndex: "-1" } : null}
         className="preloader"
       ></div>
