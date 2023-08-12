@@ -2,23 +2,30 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 const Preloader = () => {
-  const [pageLoaded, setPageLoaded] = useState(false);
-  const handlePageLoad = () => {
-    setPageLoaded(!pageLoaded);
-  };
+  const [pageLoaded, setPageLoaded] = useState();
+  // const handlePageLoad = () => {
+  //   setPageLoaded(!pageLoaded);
+  // };
   useEffect(() => {
     // document.readyState = () => {
     //   handlePageLoad();
     // };
-    window.onload = () => {
-      loadNow();
-    };
+
+    // window.onload = () => {
+    //   loadNow();
+    // };
+    document.addEventListener("DOMContentLoaded", function () {
+      setInterval(() => {
+        setPageLoaded(true);
+      }, 1000);
+    });
   }, []);
-  const loadNow = () => {
-    setTimeout(() => {
-      setPageLoaded(true);
-    }, 500);
-  };
+  // function loadNow() {
+  //   setTimeout(() => {
+  //     setPageLoaded(!pageLoaded);
+  //     console.log("inside loadnow");
+  //   }, 500);
+  // }
 
   return (
     <div>
@@ -35,7 +42,7 @@ const Preloader = () => {
       {/* --------new--------- */}
 
       <div
-        style={pageLoaded ? { opacity: "0", zIndex: "-1" } : null}
+        style={pageLoaded === true ? { opacity: "0", zIndex: "-1" } : null}
         className="preloader"
       ></div>
     </div>
