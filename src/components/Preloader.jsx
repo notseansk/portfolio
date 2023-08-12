@@ -20,7 +20,7 @@ const Preloader = () => {
 
   setTimeout(() => {
     setPageLoaded(true);
-  }, 700);
+  }, 1300);
   return (
     <div>
       {/* --------this doesnot work---------- */}
