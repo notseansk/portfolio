@@ -204,7 +204,9 @@
 }
 @media screen and (max-width: 710px) {
   // ---------global---------
-
+  #preloader {
+    background-size: 17%;
+  }
   // ---------navbar---------
   // ---------home---------
   // ---------about---------

@@ -12,15 +12,19 @@ import { useEffect, useState } from "react";
 function App() {
   const [pageLoaded, setPageLoaded] = useState(false);
   useEffect(() => {
-    window.addEventListener("load", () => {
-      setPageLoaded(true);
-    });
+    window.addEventListener(
+      "load",
+      () => {
+        setPageLoaded(true);
+      },
+      { passive: true }
+    );
     return () => {
       window.removeEventListener("load", () => {
         setPageLoaded(true);
       });
     };
-  });
+  }, []);
   return (
     <div className="App">
       {/* --------this doesnot work---------- */}
