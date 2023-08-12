@@ -1,5 +1,4 @@
 import { Toaster } from "react-hot-toast";
-import "../styles/App.css";
 
 import About from "./About";
 import Contact from "./Contact";
@@ -8,30 +7,13 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Technologies from "./Technologies";
-import { useEffect, useState } from "react";
+import Preloader from "./Preloader";
+import "../styles/App.css";
+
 function App() {
-  const [pageLoaded, setPageLoaded] = useState(false);
-  const handlePageLoad = () => {
-    setPageLoaded(!pageLoaded);
-  };
-  useEffect(() => {
-    // document.ready = () => {
-    //   handlePageLoad();
-    // };
-    window.onload = () => {
-      setTimeout(() => {
-        handlePageLoad();
-      }, 1000);
-    };
-  }, []);
   return (
     <div className="App">
-      {/* --------this doesnot work---------- */}
-      {/* <div style={pageLoaded && { display: "none" }} id="preloader"></div> */}
-      {/* --------but this works---------- */}
-      {/* <div style={pageLoaded ? { display: "none" } : null} id="preloader"></div> */}
-      {/* --------new--------- */}
-      {pageLoaded ? null : <div id="preloader"></div>}
+      <Preloader />
       <Navbar />
       <Home />
       <About />
