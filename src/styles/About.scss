@@ -27,7 +27,11 @@
         font-size: f.$paragraph-large;
         // text-align: left;
         // letter-spacing: 0.6px;
-
+        a {
+          color: c.$secondary-light;
+          font-weight: 600;
+          text-decoration: underline;
+        }
         .tab {
           margin-left: 120px;
         }
