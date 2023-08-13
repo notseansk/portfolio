@@ -10,6 +10,9 @@ import SocialsDropdown from "./SocialsDropdown";
 const Navbar = () => {
   useEffect(() => {
     window.addEventListener("click", handleClicked);
+    // window.addEventListener("resize", (e) => {
+    //   console.log(e);
+    // });
     return () => window.removeEventListener("click", handleClicked);
   }, []);
   const [activeTab, setActiveTab] = useState(null);
@@ -35,7 +38,7 @@ const Navbar = () => {
             <img src={logoMain} alt="logo" />
           </a>
         </div>
-        <main className={menuIconClicked && "active-menu"}>
+        <main className={menuIconClicked ? "active-menu" : null}>
           <a
             onClick={handleClick}
             id="about"
@@ -80,7 +83,14 @@ const Navbar = () => {
             ) : null}
           </div>
 
-          <a className="nav-links nav-email" href="mailto:shaunpant@gmail.com">
+          <a
+            className={
+              activeTab === "socials" && clicked && menuIconClicked
+                ? "push-down nav-links nav-email"
+                : "nav-links nav-email"
+            }
+            href="mailto:shaunpant@gmail.com"
+          >
             Email
           </a>
         </main>
